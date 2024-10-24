@@ -9706,6 +9706,38 @@
               - AttributeList
               - FeatureMap
               - ClusterRevision
+          MicrowaveOvenMode:
+              - SupportedModes
+              - CurrentMode
+              - StartUpMode
+              - OnMode
+              - GeneratedCommandList
+              - AcceptedCommandList
+              - AttributeList
+              - FeatureMap
+              - ClusterRevision
+          OvenMode:
+              - SupportedModes
+              - CurrentMode
+              - StartUpMode
+              - OnMode
+              - GeneratedCommandList
+              - AcceptedCommandList
+              - AttributeList
+              - FeatureMap
+              - ClusterRevision
+          OvenCavityOperationalState:
+              - PhaseList
+              - CurrentPhase
+              - CountdownTime
+              - OperationalStateList
+              - OperationalState
+              - OperationalError
+              - GeneratedCommandList
+              - AcceptedCommandList
+              - AttributeList
+              - FeatureMap
+              - ClusterRevision
       enums:
           ColorControl:
               - DirectionEnum
