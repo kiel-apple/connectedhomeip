@@ -9781,6 +9781,16 @@
               - EnhancedColorModeEnum
               - MoveModeEnum
               - StepModeEnum
+      structs:
+          MicrowaveOvenMode:
+              - ModeTagStruct
+              - ModeOptionStruct
+          OvenMode:
+              - ModeTagStruct
+              - ModeOptionStruct
+          OvenCavityOperationalState:
+              - ErrorStateStruct
+              - OperationalStateStruct
       enum values:
           ColorControl:
               ColorLoopDirectionEnum:
