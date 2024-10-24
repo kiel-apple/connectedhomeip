@@ -9791,6 +9791,31 @@
           OvenCavityOperationalState:
               - ErrorStateStruct
               - OperationalStateStruct
+      struct fields:
+          MicrowaveOvenMode:
+              ModeTagStruct:
+                  - mfgCode
+                  - value
+              ModeOptionStruct:
+                  - label
+                  - mode
+                  - modeTags
+          OvenMode:
+              ModeTagStruct:
+                  - mfgCode
+                  - value
+              ModeOptionStruct:
+                  - label
+                  - mode
+                  - modeTags
+          OvenCavityOperationalState:
+              ErrorStateStruct:
+                  - errorStateID
+                  - errorStateLabel
+                  - errorStateDetails
+              OperationalStateStruct:
+                  - operationalStateID
+                  - operationalStateLabel
       enum values:
           ColorControl:
               ColorLoopDirectionEnum:
