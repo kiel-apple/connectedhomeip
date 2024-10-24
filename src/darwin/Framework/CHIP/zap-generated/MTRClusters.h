@@ -2038,18 +2038,18 @@ MTR_PROVISIONALLY_AVAILABLE
 MTR_NEWLY_AVAILABLE
 @interface MTRClusterOvenCavityOperationalState : MTRGenericCluster
 
-- (void)pauseWithParams:(MTROvenCavityOperationalStateClusterPauseParams * _Nullable)params expectedValues:(NSArray<NSDictionary<NSString *, id> *> * _Nullable)expectedDataValueDictionaries expectedValueInterval:(NSNumber * _Nullable)expectedValueIntervalMs completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion MTR_PROVISIONALLY_AVAILABLE;
+- (void)pauseWithParams:(MTROvenCavityOperationalStateClusterPauseParams * _Nullable)params expectedValues:(NSArray<NSDictionary<NSString *, id> *> * _Nullable)expectedDataValueDictionaries expectedValueInterval:(NSNumber * _Nullable)expectedValueIntervalMs completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion MTR_NEWLY_AVAILABLE;
 - (void)pauseWithExpectedValues:(NSArray<NSDictionary<NSString *, id> *> * _Nullable)expectedValues expectedValueInterval:(NSNumber * _Nullable)expectedValueIntervalMs completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion
-    MTR_PROVISIONALLY_AVAILABLE;
-- (void)stopWithParams:(MTROvenCavityOperationalStateClusterStopParams * _Nullable)params expectedValues:(NSArray<NSDictionary<NSString *, id> *> * _Nullable)expectedDataValueDictionaries expectedValueInterval:(NSNumber * _Nullable)expectedValueIntervalMs completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion MTR_PROVISIONALLY_AVAILABLE;
+    MTR_NEWLY_AVAILABLE;
+- (void)stopWithParams:(MTROvenCavityOperationalStateClusterStopParams * _Nullable)params expectedValues:(NSArray<NSDictionary<NSString *, id> *> * _Nullable)expectedDataValueDictionaries expectedValueInterval:(NSNumber * _Nullable)expectedValueIntervalMs completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion MTR_NEWLY_AVAILABLE;
 - (void)stopWithExpectedValues:(NSArray<NSDictionary<NSString *, id> *> * _Nullable)expectedValues expectedValueInterval:(NSNumber * _Nullable)expectedValueIntervalMs completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion
-    MTR_PROVISIONALLY_AVAILABLE;
-- (void)startWithParams:(MTROvenCavityOperationalStateClusterStartParams * _Nullable)params expectedValues:(NSArray<NSDictionary<NSString *, id> *> * _Nullable)expectedDataValueDictionaries expectedValueInterval:(NSNumber * _Nullable)expectedValueIntervalMs completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion MTR_PROVISIONALLY_AVAILABLE;
+    MTR_NEWLY_AVAILABLE;
+- (void)startWithParams:(MTROvenCavityOperationalStateClusterStartParams * _Nullable)params expectedValues:(NSArray<NSDictionary<NSString *, id> *> * _Nullable)expectedDataValueDictionaries expectedValueInterval:(NSNumber * _Nullable)expectedValueIntervalMs completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion MTR_NEWLY_AVAILABLE;
 - (void)startWithExpectedValues:(NSArray<NSDictionary<NSString *, id> *> * _Nullable)expectedValues expectedValueInterval:(NSNumber * _Nullable)expectedValueIntervalMs completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion
-    MTR_PROVISIONALLY_AVAILABLE;
-- (void)resumeWithParams:(MTROvenCavityOperationalStateClusterResumeParams * _Nullable)params expectedValues:(NSArray<NSDictionary<NSString *, id> *> * _Nullable)expectedDataValueDictionaries expectedValueInterval:(NSNumber * _Nullable)expectedValueIntervalMs completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion MTR_PROVISIONALLY_AVAILABLE;
+    MTR_NEWLY_AVAILABLE;
+- (void)resumeWithParams:(MTROvenCavityOperationalStateClusterResumeParams * _Nullable)params expectedValues:(NSArray<NSDictionary<NSString *, id> *> * _Nullable)expectedDataValueDictionaries expectedValueInterval:(NSNumber * _Nullable)expectedValueIntervalMs completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion MTR_NEWLY_AVAILABLE;
 - (void)resumeWithExpectedValues:(NSArray<NSDictionary<NSString *, id> *> * _Nullable)expectedValues expectedValueInterval:(NSNumber * _Nullable)expectedValueIntervalMs completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion
-    MTR_PROVISIONALLY_AVAILABLE;
+    MTR_NEWLY_AVAILABLE;
 
 - (NSDictionary<NSString *, id> * _Nullable)readAttributePhaseListWithParams:(MTRReadParams * _Nullable)params MTR_NEWLY_AVAILABLE;
 
@@ -2097,7 +2097,7 @@ MTR_NEWLY_AVAILABLE
 MTR_NEWLY_AVAILABLE
 @interface MTRClusterOvenMode : MTRGenericCluster
 
-- (void)changeToModeWithParams:(MTROvenModeClusterChangeToModeParams *)params expectedValues:(NSArray<NSDictionary<NSString *, id> *> * _Nullable)expectedDataValueDictionaries expectedValueInterval:(NSNumber * _Nullable)expectedValueIntervalMs completion:(void (^)(MTROvenModeClusterChangeToModeResponseParams * _Nullable data, NSError * _Nullable error))completion MTR_PROVISIONALLY_AVAILABLE;
+- (void)changeToModeWithParams:(MTROvenModeClusterChangeToModeParams *)params expectedValues:(NSArray<NSDictionary<NSString *, id> *> * _Nullable)expectedDataValueDictionaries expectedValueInterval:(NSNumber * _Nullable)expectedValueIntervalMs completion:(void (^)(MTROvenModeClusterChangeToModeResponseParams * _Nullable data, NSError * _Nullable error))completion MTR_NEWLY_AVAILABLE;
 
 - (NSDictionary<NSString *, id> * _Nullable)readAttributeSupportedModesWithParams:(MTRReadParams * _Nullable)params MTR_NEWLY_AVAILABLE;
 
@@ -2783,10 +2783,10 @@ MTR_NEWLY_AVAILABLE
 MTR_NEWLY_AVAILABLE
 @interface MTRClusterMicrowaveOvenControl : MTRGenericCluster
 
-- (void)setCookingParametersWithParams:(MTRMicrowaveOvenControlClusterSetCookingParametersParams * _Nullable)params expectedValues:(NSArray<NSDictionary<NSString *, id> *> * _Nullable)expectedDataValueDictionaries expectedValueInterval:(NSNumber * _Nullable)expectedValueIntervalMs completion:(MTRStatusCompletion)completion MTR_PROVISIONALLY_AVAILABLE;
+- (void)setCookingParametersWithParams:(MTRMicrowaveOvenControlClusterSetCookingParametersParams * _Nullable)params expectedValues:(NSArray<NSDictionary<NSString *, id> *> * _Nullable)expectedDataValueDictionaries expectedValueInterval:(NSNumber * _Nullable)expectedValueIntervalMs completion:(MTRStatusCompletion)completion MTR_NEWLY_AVAILABLE;
 - (void)setCookingParametersWithExpectedValues:(NSArray<NSDictionary<NSString *, id> *> * _Nullable)expectedValues expectedValueInterval:(NSNumber * _Nullable)expectedValueIntervalMs completion:(MTRStatusCompletion)completion
-    MTR_PROVISIONALLY_AVAILABLE;
-- (void)addMoreTimeWithParams:(MTRMicrowaveOvenControlClusterAddMoreTimeParams *)params expectedValues:(NSArray<NSDictionary<NSString *, id> *> * _Nullable)expectedDataValueDictionaries expectedValueInterval:(NSNumber * _Nullable)expectedValueIntervalMs completion:(MTRStatusCompletion)completion MTR_PROVISIONALLY_AVAILABLE;
+    MTR_NEWLY_AVAILABLE;
+- (void)addMoreTimeWithParams:(MTRMicrowaveOvenControlClusterAddMoreTimeParams *)params expectedValues:(NSArray<NSDictionary<NSString *, id> *> * _Nullable)expectedDataValueDictionaries expectedValueInterval:(NSNumber * _Nullable)expectedValueIntervalMs completion:(MTRStatusCompletion)completion MTR_NEWLY_AVAILABLE;
 
 - (NSDictionary<NSString *, id> * _Nullable)readAttributeCookTimeWithParams:(MTRReadParams * _Nullable)params MTR_NEWLY_AVAILABLE;
 

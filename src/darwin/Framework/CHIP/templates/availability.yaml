@@ -9738,6 +9738,22 @@
               - AttributeList
               - FeatureMap
               - ClusterRevision
+      commands:
+          MicrowaveOvenControl:
+              - SetCookingParameters
+              - AddMoreTime
+          MicrowaveOvenMode:
+              - ChangeToMode
+              - ChangeToModeResponse
+          OvenMode:
+              - ChangeToMode
+              - ChangeToModeResponse
+          OvenCavityOperationalState:
+              - Pause
+              - Stop
+              - Start
+              - Resume
+              - OperationalCommandResponse
       enums:
           ColorControl:
               - DirectionEnum

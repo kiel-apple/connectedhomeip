@@ -6273,15 +6273,15 @@ typedef NS_ENUM(uint32_t, MTRCommandIDType) {
     MTRCommandIDTypeClusterTimerCommandReduceTimeID MTR_PROVISIONALLY_AVAILABLE = 0x00000003,
 
     // Cluster OvenCavityOperationalState commands
-    MTRCommandIDTypeClusterOvenCavityOperationalStateCommandPauseID MTR_PROVISIONALLY_AVAILABLE = 0x00000000,
-    MTRCommandIDTypeClusterOvenCavityOperationalStateCommandStopID MTR_PROVISIONALLY_AVAILABLE = 0x00000001,
-    MTRCommandIDTypeClusterOvenCavityOperationalStateCommandStartID MTR_PROVISIONALLY_AVAILABLE = 0x00000002,
-    MTRCommandIDTypeClusterOvenCavityOperationalStateCommandResumeID MTR_PROVISIONALLY_AVAILABLE = 0x00000003,
-    MTRCommandIDTypeClusterOvenCavityOperationalStateCommandOperationalCommandResponseID MTR_PROVISIONALLY_AVAILABLE = 0x00000004,
+    MTRCommandIDTypeClusterOvenCavityOperationalStateCommandPauseID MTR_NEWLY_AVAILABLE = 0x00000000,
+    MTRCommandIDTypeClusterOvenCavityOperationalStateCommandStopID MTR_NEWLY_AVAILABLE = 0x00000001,
+    MTRCommandIDTypeClusterOvenCavityOperationalStateCommandStartID MTR_NEWLY_AVAILABLE = 0x00000002,
+    MTRCommandIDTypeClusterOvenCavityOperationalStateCommandResumeID MTR_NEWLY_AVAILABLE = 0x00000003,
+    MTRCommandIDTypeClusterOvenCavityOperationalStateCommandOperationalCommandResponseID MTR_NEWLY_AVAILABLE = 0x00000004,
 
     // Cluster OvenMode commands
-    MTRCommandIDTypeClusterOvenModeCommandChangeToModeID MTR_PROVISIONALLY_AVAILABLE = 0x00000000,
-    MTRCommandIDTypeClusterOvenModeCommandChangeToModeResponseID MTR_PROVISIONALLY_AVAILABLE = 0x00000001,
+    MTRCommandIDTypeClusterOvenModeCommandChangeToModeID MTR_NEWLY_AVAILABLE = 0x00000000,
+    MTRCommandIDTypeClusterOvenModeCommandChangeToModeResponseID MTR_NEWLY_AVAILABLE = 0x00000001,
 
     // Cluster ModeSelect deprecated command id names
     MTRClusterModeSelectCommandChangeToModeID
@@ -6322,8 +6322,8 @@ typedef NS_ENUM(uint32_t, MTRCommandIDType) {
     MTRCommandIDTypeClusterDishwasherAlarmCommandModifyEnabledAlarmsID MTR_PROVISIONALLY_AVAILABLE = 0x00000001,
 
     // Cluster MicrowaveOvenControl commands
-    MTRCommandIDTypeClusterMicrowaveOvenControlCommandSetCookingParametersID MTR_PROVISIONALLY_AVAILABLE = 0x00000000,
-    MTRCommandIDTypeClusterMicrowaveOvenControlCommandAddMoreTimeID MTR_PROVISIONALLY_AVAILABLE = 0x00000001,
+    MTRCommandIDTypeClusterMicrowaveOvenControlCommandSetCookingParametersID MTR_NEWLY_AVAILABLE = 0x00000000,
+    MTRCommandIDTypeClusterMicrowaveOvenControlCommandAddMoreTimeID MTR_NEWLY_AVAILABLE = 0x00000001,
 
     // Cluster OperationalState commands
     MTRCommandIDTypeClusterOperationalStateCommandPauseID MTR_AVAILABLE(ios(17.4), macos(14.4), watchos(10.4), tvos(17.4)) = 0x00000000,

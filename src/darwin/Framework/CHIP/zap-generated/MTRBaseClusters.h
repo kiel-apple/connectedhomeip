@@ -4375,33 +4375,33 @@ MTR_NEWLY_AVAILABLE
  *
  * Upon receipt, the device SHALL pause its operation if it is possible based on the current function of the server.
  */
-- (void)pauseWithParams:(MTROvenCavityOperationalStateClusterPauseParams * _Nullable)params completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion MTR_PROVISIONALLY_AVAILABLE;
+- (void)pauseWithParams:(MTROvenCavityOperationalStateClusterPauseParams * _Nullable)params completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion MTR_NEWLY_AVAILABLE;
 - (void)pauseWithCompletion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion
-    MTR_PROVISIONALLY_AVAILABLE;
+    MTR_NEWLY_AVAILABLE;
 /**
  * Command Stop
  *
  * Upon receipt, the device SHALL stop its operation if it is at a position where it is safe to do so and/or permitted.
  */
-- (void)stopWithParams:(MTROvenCavityOperationalStateClusterStopParams * _Nullable)params completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion MTR_PROVISIONALLY_AVAILABLE;
+- (void)stopWithParams:(MTROvenCavityOperationalStateClusterStopParams * _Nullable)params completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion MTR_NEWLY_AVAILABLE;
 - (void)stopWithCompletion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion
-    MTR_PROVISIONALLY_AVAILABLE;
+    MTR_NEWLY_AVAILABLE;
 /**
  * Command Start
  *
  * Upon receipt, the device SHALL start its operation if it is safe to do so and the device is in an operational state from which it can be started.
  */
-- (void)startWithParams:(MTROvenCavityOperationalStateClusterStartParams * _Nullable)params completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion MTR_PROVISIONALLY_AVAILABLE;
+- (void)startWithParams:(MTROvenCavityOperationalStateClusterStartParams * _Nullable)params completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion MTR_NEWLY_AVAILABLE;
 - (void)startWithCompletion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion
-    MTR_PROVISIONALLY_AVAILABLE;
+    MTR_NEWLY_AVAILABLE;
 /**
  * Command Resume
  *
  * Upon receipt, the device SHALL resume its operation from the point it was at when it received the Pause command, or from the point when it was paused by means outside of this cluster (for example by manual button press).
  */
-- (void)resumeWithParams:(MTROvenCavityOperationalStateClusterResumeParams * _Nullable)params completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion MTR_PROVISIONALLY_AVAILABLE;
+- (void)resumeWithParams:(MTROvenCavityOperationalStateClusterResumeParams * _Nullable)params completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion MTR_NEWLY_AVAILABLE;
 - (void)resumeWithCompletion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams * _Nullable data, NSError * _Nullable error))completion
-    MTR_PROVISIONALLY_AVAILABLE;
+    MTR_NEWLY_AVAILABLE;
 
 - (void)readAttributePhaseListWithCompletion:(void (^)(NSArray * _Nullable value, NSError * _Nullable error))completion MTR_NEWLY_AVAILABLE;
 - (void)subscribeAttributePhaseListWithParams:(MTRSubscribeParams *)params
@@ -4500,7 +4500,7 @@ MTR_NEWLY_AVAILABLE
  * This command is used to change device modes.
         On receipt of this command the device SHALL respond with a ChangeToModeResponse command.
  */
-- (void)changeToModeWithParams:(MTROvenModeClusterChangeToModeParams *)params completion:(void (^)(MTROvenModeClusterChangeToModeResponseParams * _Nullable data, NSError * _Nullable error))completion MTR_PROVISIONALLY_AVAILABLE;
+- (void)changeToModeWithParams:(MTROvenModeClusterChangeToModeParams *)params completion:(void (^)(MTROvenModeClusterChangeToModeResponseParams * _Nullable data, NSError * _Nullable error))completion MTR_NEWLY_AVAILABLE;
 
 - (void)readAttributeSupportedModesWithCompletion:(void (^)(NSArray * _Nullable value, NSError * _Nullable error))completion MTR_NEWLY_AVAILABLE;
 - (void)subscribeAttributeSupportedModesWithParams:(MTRSubscribeParams *)params
@@ -5805,15 +5805,15 @@ MTR_NEWLY_AVAILABLE
  *
  * Set Cooking Parameters
  */
-- (void)setCookingParametersWithParams:(MTRMicrowaveOvenControlClusterSetCookingParametersParams * _Nullable)params completion:(MTRStatusCompletion)completion MTR_PROVISIONALLY_AVAILABLE;
+- (void)setCookingParametersWithParams:(MTRMicrowaveOvenControlClusterSetCookingParametersParams * _Nullable)params completion:(MTRStatusCompletion)completion MTR_NEWLY_AVAILABLE;
 - (void)setCookingParametersWithCompletion:(MTRStatusCompletion)completion
-    MTR_PROVISIONALLY_AVAILABLE;
+    MTR_NEWLY_AVAILABLE;
 /**
  * Command AddMoreTime
  *
  * Add More Cooking Time
  */
-- (void)addMoreTimeWithParams:(MTRMicrowaveOvenControlClusterAddMoreTimeParams *)params completion:(MTRStatusCompletion)completion MTR_PROVISIONALLY_AVAILABLE;
+- (void)addMoreTimeWithParams:(MTRMicrowaveOvenControlClusterAddMoreTimeParams *)params completion:(MTRStatusCompletion)completion MTR_NEWLY_AVAILABLE;
 
 - (void)readAttributeCookTimeWithCompletion:(void (^)(NSNumber * _Nullable value, NSError * _Nullable error))completion MTR_NEWLY_AVAILABLE;
 - (void)subscribeAttributeCookTimeWithParams:(MTRSubscribeParams *)params
