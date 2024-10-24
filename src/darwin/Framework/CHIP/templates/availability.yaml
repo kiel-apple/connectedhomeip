@@ -9685,6 +9685,11 @@
 - release: "Future"
   versions: "future"
   introduced:
+      clusters:
+          - MicrowaveOvenControl
+          - MicrowaveOvenMode
+          - OvenMode
+          - OvenCavityOperationalState
       enums:
           ColorControl:
               - DirectionEnum
