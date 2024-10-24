@@ -9690,6 +9690,22 @@
           - MicrowaveOvenMode
           - OvenMode
           - OvenCavityOperationalState
+      attributes:
+          MicrowaveOvenControl:
+              - CookTime
+              - MaxCookTime
+              - PowerSetting
+              - MinPower
+              - MaxPower
+              - PowerStep
+              # SupportedWatts and SelectedWattIndex are Provisional because WATTS is Provisional in Matter 1.3
+              # WATTS is provisional in 1.3 because no one has submitted a DUT for it
+              - WattRating
+              - GeneratedCommandList
+              - AcceptedCommandList
+              - AttributeList
+              - FeatureMap
+              - ClusterRevision
       enums:
           ColorControl:
               - DirectionEnum
