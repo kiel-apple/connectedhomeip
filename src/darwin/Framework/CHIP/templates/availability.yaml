@@ -9816,6 +9816,18 @@
               OperationalStateStruct:
                   - operationalStateID
                   - operationalStateLabel
+      events:
+          OvenCavityOperationalState:
+              - OperationalError
+              - OperationCompletion
+      event fields:
+          OvenCavityOperationalState:
+              OperationalError:
+                  - errorState
+              OperationCompletion:
+                  - completionErrorCode
+                  - totalOperationalTime
+                  - pausedTime
       enum values:
           ColorControl:
               ColorLoopDirectionEnum:
