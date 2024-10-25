@@ -17388,17 +17388,17 @@ typedef NS_OPTIONS(uint32_t, MTRTimerFeature) {
 } MTR_PROVISIONALLY_AVAILABLE;
 
 typedef NS_ENUM(uint8_t, MTROvenCavityOperationalStateErrorState) {
-    MTROvenCavityOperationalStateErrorStateNoError MTR_PROVISIONALLY_AVAILABLE = 0x00,
-    MTROvenCavityOperationalStateErrorStateUnableToStartOrResume MTR_PROVISIONALLY_AVAILABLE = 0x01,
-    MTROvenCavityOperationalStateErrorStateUnableToCompleteOperation MTR_PROVISIONALLY_AVAILABLE = 0x02,
-    MTROvenCavityOperationalStateErrorStateCommandInvalidInState MTR_PROVISIONALLY_AVAILABLE = 0x03,
+    MTROvenCavityOperationalStateErrorStateNoError MTR_NEWLY_AVAILABLE = 0x00,
+    MTROvenCavityOperationalStateErrorStateUnableToStartOrResume MTR_NEWLY_AVAILABLE = 0x01,
+    MTROvenCavityOperationalStateErrorStateUnableToCompleteOperation MTR_NEWLY_AVAILABLE = 0x02,
+    MTROvenCavityOperationalStateErrorStateCommandInvalidInState MTR_NEWLY_AVAILABLE = 0x03,
 } MTR_NEWLY_AVAILABLE;
 
 typedef NS_ENUM(uint8_t, MTROvenCavityOperationalStateOperationalState) {
-    MTROvenCavityOperationalStateOperationalStateStopped MTR_PROVISIONALLY_AVAILABLE = 0x00,
-    MTROvenCavityOperationalStateOperationalStateRunning MTR_PROVISIONALLY_AVAILABLE = 0x01,
-    MTROvenCavityOperationalStateOperationalStatePaused MTR_PROVISIONALLY_AVAILABLE = 0x02,
-    MTROvenCavityOperationalStateOperationalStateError MTR_PROVISIONALLY_AVAILABLE = 0x03,
+    MTROvenCavityOperationalStateOperationalStateStopped MTR_NEWLY_AVAILABLE = 0x00,
+    MTROvenCavityOperationalStateOperationalStateRunning MTR_NEWLY_AVAILABLE = 0x01,
+    MTROvenCavityOperationalStateOperationalStatePaused MTR_NEWLY_AVAILABLE = 0x02,
+    MTROvenCavityOperationalStateOperationalStateError MTR_NEWLY_AVAILABLE = 0x03,
 } MTR_NEWLY_AVAILABLE;
 
 typedef NS_ENUM(uint16_t, MTROvenModeModeTag) {
@@ -17412,15 +17412,15 @@ typedef NS_ENUM(uint16_t, MTROvenModeModeTag) {
     MTROvenModeModeTagMax MTR_PROVISIONALLY_AVAILABLE = 0x07,
     MTROvenModeModeTagNight MTR_PROVISIONALLY_AVAILABLE = 0x08,
     MTROvenModeModeTagDay MTR_PROVISIONALLY_AVAILABLE = 0x09,
-    MTROvenModeModeTagBake MTR_PROVISIONALLY_AVAILABLE = 0x4000,
-    MTROvenModeModeTagConvection MTR_PROVISIONALLY_AVAILABLE = 0x4001,
-    MTROvenModeModeTagGrill MTR_PROVISIONALLY_AVAILABLE = 0x4002,
-    MTROvenModeModeTagRoast MTR_PROVISIONALLY_AVAILABLE = 0x4003,
-    MTROvenModeModeTagClean MTR_PROVISIONALLY_AVAILABLE = 0x4004,
-    MTROvenModeModeTagConvectionBake MTR_PROVISIONALLY_AVAILABLE = 0x4005,
-    MTROvenModeModeTagConvectionRoast MTR_PROVISIONALLY_AVAILABLE = 0x4006,
-    MTROvenModeModeTagWarming MTR_PROVISIONALLY_AVAILABLE = 0x4007,
-    MTROvenModeModeTagProofing MTR_PROVISIONALLY_AVAILABLE = 0x4008,
+    MTROvenModeModeTagBake MTR_NEWLY_AVAILABLE = 0x4000,
+    MTROvenModeModeTagConvection MTR_NEWLY_AVAILABLE = 0x4001,
+    MTROvenModeModeTagGrill MTR_NEWLY_AVAILABLE = 0x4002,
+    MTROvenModeModeTagRoast MTR_NEWLY_AVAILABLE = 0x4003,
+    MTROvenModeModeTagClean MTR_NEWLY_AVAILABLE = 0x4004,
+    MTROvenModeModeTagConvectionBake MTR_NEWLY_AVAILABLE = 0x4005,
+    MTROvenModeModeTagConvectionRoast MTR_NEWLY_AVAILABLE = 0x4006,
+    MTROvenModeModeTagWarming MTR_NEWLY_AVAILABLE = 0x4007,
+    MTROvenModeModeTagProofing MTR_NEWLY_AVAILABLE = 0x4008,
 } MTR_NEWLY_AVAILABLE;
 
 typedef NS_OPTIONS(uint32_t, MTROvenModeFeature) {
@@ -17663,8 +17663,8 @@ typedef NS_ENUM(uint16_t, MTRMicrowaveOvenModeModeTag) {
     MTRMicrowaveOvenModeModeTagMax MTR_PROVISIONALLY_AVAILABLE = 0x07,
     MTRMicrowaveOvenModeModeTagNight MTR_PROVISIONALLY_AVAILABLE = 0x08,
     MTRMicrowaveOvenModeModeTagDay MTR_PROVISIONALLY_AVAILABLE = 0x09,
-    MTRMicrowaveOvenModeModeTagNormal MTR_PROVISIONALLY_AVAILABLE = 0x4000,
-    MTRMicrowaveOvenModeModeTagDefrost MTR_PROVISIONALLY_AVAILABLE = 0x4001,
+    MTRMicrowaveOvenModeModeTagNormal MTR_NEWLY_AVAILABLE = 0x4000,
+    MTRMicrowaveOvenModeModeTagDefrost MTR_NEWLY_AVAILABLE = 0x4001,
 } MTR_NEWLY_AVAILABLE;
 
 typedef NS_OPTIONS(uint32_t, MTRMicrowaveOvenModeFeature) {

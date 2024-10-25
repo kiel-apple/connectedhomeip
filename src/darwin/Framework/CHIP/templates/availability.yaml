@@ -9865,6 +9865,33 @@
               StepModeEnum:
                   - Up
                   - Down
+          MicrowaveOvenMode:
+              ModeTag:
+                  - Normal
+                  - Defrost
+          OvenMode:
+              ModeTag:
+                  - Bake
+                  - Convection
+                  - Grill
+                  - Roast
+                  - Clean
+                  - ConvectionBake
+                  - ConvectionRoast
+                  - Warming
+                  - Proofing
+                  - Steam
+          OvenCavityOperationalState:
+              ErrorStateEnum:
+                  - NoError
+                  - UnableToStartOrResume
+                  - UnableToCompleteOperation
+                  - CommandInvalidInState
+              OperationalStateEnum:
+                  - Stopped
+                  - Running
+                  - Paused
+                  - Error
       bitmaps:
           ColorControl:
               - ColorCapabilitiesBitmap
