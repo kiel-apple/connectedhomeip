@@ -17392,14 +17392,14 @@ typedef NS_ENUM(uint8_t, MTROvenCavityOperationalStateErrorState) {
     MTROvenCavityOperationalStateErrorStateUnableToStartOrResume MTR_PROVISIONALLY_AVAILABLE = 0x01,
     MTROvenCavityOperationalStateErrorStateUnableToCompleteOperation MTR_PROVISIONALLY_AVAILABLE = 0x02,
     MTROvenCavityOperationalStateErrorStateCommandInvalidInState MTR_PROVISIONALLY_AVAILABLE = 0x03,
-} MTR_PROVISIONALLY_AVAILABLE;
+} MTR_NEWLY_AVAILABLE;
 
 typedef NS_ENUM(uint8_t, MTROvenCavityOperationalStateOperationalState) {
     MTROvenCavityOperationalStateOperationalStateStopped MTR_PROVISIONALLY_AVAILABLE = 0x00,
     MTROvenCavityOperationalStateOperationalStateRunning MTR_PROVISIONALLY_AVAILABLE = 0x01,
     MTROvenCavityOperationalStateOperationalStatePaused MTR_PROVISIONALLY_AVAILABLE = 0x02,
     MTROvenCavityOperationalStateOperationalStateError MTR_PROVISIONALLY_AVAILABLE = 0x03,
-} MTR_PROVISIONALLY_AVAILABLE;
+} MTR_NEWLY_AVAILABLE;
 
 typedef NS_ENUM(uint16_t, MTROvenModeModeTag) {
     MTROvenModeModeTagAuto MTR_PROVISIONALLY_AVAILABLE = 0x00,
@@ -17421,7 +17421,7 @@ typedef NS_ENUM(uint16_t, MTROvenModeModeTag) {
     MTROvenModeModeTagConvectionRoast MTR_PROVISIONALLY_AVAILABLE = 0x4006,
     MTROvenModeModeTagWarming MTR_PROVISIONALLY_AVAILABLE = 0x4007,
     MTROvenModeModeTagProofing MTR_PROVISIONALLY_AVAILABLE = 0x4008,
-} MTR_PROVISIONALLY_AVAILABLE;
+} MTR_NEWLY_AVAILABLE;
 
 typedef NS_OPTIONS(uint32_t, MTROvenModeFeature) {
     MTROvenModeFeatureOnOff MTR_PROVISIONALLY_AVAILABLE = 0x1,
@@ -17665,7 +17665,7 @@ typedef NS_ENUM(uint16_t, MTRMicrowaveOvenModeModeTag) {
     MTRMicrowaveOvenModeModeTagDay MTR_PROVISIONALLY_AVAILABLE = 0x09,
     MTRMicrowaveOvenModeModeTagNormal MTR_PROVISIONALLY_AVAILABLE = 0x4000,
     MTRMicrowaveOvenModeModeTagDefrost MTR_PROVISIONALLY_AVAILABLE = 0x4001,
-} MTR_PROVISIONALLY_AVAILABLE;
+} MTR_NEWLY_AVAILABLE;
 
 typedef NS_OPTIONS(uint32_t, MTRMicrowaveOvenModeFeature) {
     MTRMicrowaveOvenModeFeatureOnOff MTR_PROVISIONALLY_AVAILABLE = 0x1,

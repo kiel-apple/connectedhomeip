@@ -9781,6 +9781,13 @@
               - EnhancedColorModeEnum
               - MoveModeEnum
               - StepModeEnum
+          MicrowaveOvenMode:
+              - ModeTag
+          OvenMode:
+              - ModeTag
+          OvenCavityOperationalState:
+              - ErrorStateEnum
+              - OperationalStateEnum
       structs:
           MicrowaveOvenMode:
               - ModeTagStruct
