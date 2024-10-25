@@ -17424,8 +17424,8 @@ typedef NS_ENUM(uint16_t, MTROvenModeModeTag) {
 } MTR_NEWLY_AVAILABLE;
 
 typedef NS_OPTIONS(uint32_t, MTROvenModeFeature) {
-    MTROvenModeFeatureOnOff MTR_PROVISIONALLY_AVAILABLE = 0x1,
-} MTR_PROVISIONALLY_AVAILABLE;
+    MTROvenModeFeatureOnOff MTR_NEWLY_AVAILABLE = 0x1,
+} MTR_NEWLY_AVAILABLE;
 
 typedef NS_ENUM(uint8_t, MTRLaundryDryerControlsDrynessLevel) {
     MTRLaundryDryerControlsDrynessLevelLow MTR_PROVISIONALLY_AVAILABLE = 0x00,
@@ -17668,14 +17668,14 @@ typedef NS_ENUM(uint16_t, MTRMicrowaveOvenModeModeTag) {
 } MTR_NEWLY_AVAILABLE;
 
 typedef NS_OPTIONS(uint32_t, MTRMicrowaveOvenModeFeature) {
-    MTRMicrowaveOvenModeFeatureOnOff MTR_PROVISIONALLY_AVAILABLE = 0x1,
-} MTR_PROVISIONALLY_AVAILABLE;
+    MTRMicrowaveOvenModeFeatureOnOff MTR_NEWLY_AVAILABLE = 0x1,
+} MTR_NEWLY_AVAILABLE;
 
 typedef NS_OPTIONS(uint32_t, MTRMicrowaveOvenControlFeature) {
-    MTRMicrowaveOvenControlFeaturePowerAsNumber MTR_PROVISIONALLY_AVAILABLE = 0x1,
+    MTRMicrowaveOvenControlFeaturePowerAsNumber MTR_NEWLY_AVAILABLE = 0x1,
     MTRMicrowaveOvenControlFeaturePowerInWatts MTR_PROVISIONALLY_AVAILABLE = 0x2,
-    MTRMicrowaveOvenControlFeaturePowerNumberLimits MTR_PROVISIONALLY_AVAILABLE = 0x4,
-} MTR_PROVISIONALLY_AVAILABLE;
+    MTRMicrowaveOvenControlFeaturePowerNumberLimits MTR_NEWLY_AVAILABLE = 0x4,
+} MTR_NEWLY_AVAILABLE;
 
 typedef NS_ENUM(uint8_t, MTROperationalStateErrorState) {
     MTROperationalStateErrorStateNoError MTR_AVAILABLE(ios(17.4), macos(14.4), watchos(10.4), tvos(17.4)) = 0x00,
