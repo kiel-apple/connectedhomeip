@@ -383,11 +383,6 @@ jobs:
             
             - name: Checkout
               uses: actions/checkout@v4
-            - name: Display Runner Info
-              run: |
-                  echo "OS: $RUNNER_OS"
-                  echo "Architecture: $RUNNER_ARCH"
-                  echo "Runner: ${{ runner.os }}-${{ runner.arch }}"
             - name: Setup Environment
               # coreutils for stdbuf
               run: brew install coreutils
@@ -791,6 +786,11 @@ jobs:
         runs-on: macos-13
 
         steps:
+            - name: Display Runner Info
+              run: |
+                  echo "OS: $RUNNER_OS"
+                  echo "Architecture: $RUNNER_ARCH"
+                  echo "Runner: ${{ runner.os }}-${{ runner.arch }}"
             - name: Checkout
               uses: actions/checkout@v4
             - name: Setup Environment
