@@ -6179,7 +6179,10 @@ static void (^globalReportHandler)(id _Nullable values, NSError * _Nullable erro
 
     XCTestExpectation * subscriptionExpectation = [self expectationWithDescription:@"Subscription work completed"];
     delegate.onReportEnd = ^{
-        [subscriptionExpectation fulfill];
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            [subscriptionExpectation fulfill];
+        });
     };
 
     [device setDelegate:delegate queue:queue];
